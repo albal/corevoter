@@ -1,0 +1,3 @@
+class Course(db.Model):
+    # ...
+    summary = db.Column(db.Text, nullable=False)

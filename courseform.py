@@ -1,0 +1,6 @@
+class Course(db.Model):
+    # existing fields...
+    summary = db.Column(db.Text)
+class CourseForm(FlaskForm):
+    # existing fields...
+    summary = TextAreaField('Summary', validators=[DataRequired()])
